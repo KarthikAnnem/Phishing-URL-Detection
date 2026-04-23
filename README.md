@@ -113,7 +113,11 @@ The backend loads `transformer_phishing.pt` via PyTorch at startup.
 ## Threat Classes
 
 screen shots of the outputs
-<img width="1892" height="978" alt="Screenshot 2025-11-12 102157" src="https://github.com/user-attachments/assets/a0e0a1c4-e13c-4dce-a9fb-56babb0463f4" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-17 094203" src="https://github.com/user-attachments/assets/0bf085cf-d089-4099-80ca-184ed70a66f3" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-17 094245" src="https://github.com/user-attachments/assets/9b97c22e-cfd7-4d17-b00f-48b1e6f07a94" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-17 094324" src="https://github.com/user-attachments/assets/26b30e1d-b542-49e6-a136-7e460e4acd47" />
+
+
 
 
 
