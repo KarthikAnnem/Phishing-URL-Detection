@@ -1,0 +1,27 @@
+{
+  "admin": {
+    "username": "admin",
+    "email": "admin@test.com",
+    "password": "$2b$12$AU2VidG3OpkQ5.1eydyDK.uzxKrqaRmX/Tz3RM6QzJ5MsiYvui1VW",
+    "full_name": "Admin",
+    "created": "2026-03-17T04:02:05.058545",
+    "scans": 0
+  },
+  "karthik_1": {
+    "username": "karthik_1",
+    "email": "karthik123@gmail.com",
+    "password": "$2b$12$wvweWkEjCdzaaV/SuebVeOxfTQIS3L/3VMn/qsUAXYzmFr3P.hhQm",
+    "full_name": "karthik",
+    "created": "2026-04-17T13:20:11.916199",
+    "scans": 0
+  },
+  "vinay_2": {
+    "username": "vinay_2",
+    "username_lower": "vinay_2",
+    "email": "vinay123@gmail.com",
+    "password_hash": "$2b$12$3ut2/LsuVk1pEnHfp0m1ueCtVfmYL4Cyh3vnGVlyD3hqKnEAl108O",
+    "full_name": "vinay",
+    "created": "2026-04-23T05:47:20.086259",
+    "role": "user"
+  }
+}

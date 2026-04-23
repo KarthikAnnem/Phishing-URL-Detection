@@ -1,0 +1,213 @@
+.shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sideTop { display: flex; flex-direction: column; gap: 32px; }
+.sideBottom {}
+
+.logo {
+  display: flex; align-items: center; gap: 12px;
+}
+.logoHex { font-size: 28px; color: var(--cyan); text-shadow: var(--glow-c); }
+.logoText {
+  font-family: var(--display); font-size: 20px;
+  color: var(--text-hi); letter-spacing: 0.05em;
+}
+.logoSub { font-family: var(--mono); font-size: 10px; color: var(--text-dim); letter-spacing: 0.08em; }
+
+.userCard {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+}
+.avatar {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: var(--cyan-dim);
+  border: 1px solid var(--border-hi);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--display); font-size: 20px; color: var(--cyan);
+  flex-shrink: 0;
+}
+.userName { font-size: 14px; font-weight: 600; color: var(--text-hi); }
+.userHandle { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+
+.nav { display: flex; flex-direction: column; gap: 4px; }
+.navItem {
+  display: flex; align-items: center; gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-dim);
+  font-family: var(--mono); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  cursor: pointer; text-align: left;
+  transition: all 0.15s;
+}
+.navItem:hover {
+  background: var(--cyan-dim);
+  border-color: var(--border);
+  color: var(--cyan);
+}
+.navActive {
+  background: var(--cyan-dim) !important;
+  border-color: var(--border-hi) !important;
+  color: var(--cyan) !important;
+  box-shadow: var(--glow-c);
+}
+.navIcon { font-size: 16px; }
+
+.nodeStatus {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px;
+  background: rgba(0,255,135,0.05);
+  border: 1px solid rgba(0,255,135,0.15);
+  border-radius: 10px;
+}
+
+/* ── Main ── */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 28px 40px 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
+}
+.pageTitle {
+  font-family: var(--display); font-size: 38px;
+  color: var(--text-hi); letter-spacing: 0.05em;
+}
+.pageSub { font-size: 13px; color: var(--text-dim); margin-top: 4px; }
+
+.topbarRight {}
+.modelBadge {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--cyan-dim);
+  border: 1px solid var(--border-hi);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-family: var(--mono); font-size: 10px; color: var(--cyan);
+  letter-spacing: 0.1em;
+}
+
+.content {
+  flex: 1;
+  padding: 36px 40px;
+  overflow-y: auto;
+}
+
+/* ── Scan Form ── */
+.scanForm { margin-bottom: 32px; }
+
+.scanInputWrap {
+  display: flex; align-items: center; gap: 12px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border-hi);
+  border-radius: 14px;
+  padding: 10px 10px 10px 20px;
+  transition: box-shadow 0.2s;
+}
+.scanInputWrap:focus-within {
+  box-shadow: 0 0 0 3px rgba(0,230,255,0.12), var(--glow-c);
+}
+
+.scanPrefix {
+  font-family: var(--mono); font-size: 13px; color: var(--cyan);
+  flex-shrink: 0; letter-spacing: 0.05em;
+}
+.scanInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-hi);
+  font-family: var(--mono);
+  font-size: 14px;
+  min-width: 0;
+}
+.scanInput::placeholder { color: var(--text-dim); }
+
+.scanHints {
+  display: flex; align-items: center; gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  font-family: var(--mono); font-size: 11px; color: var(--text-dim);
+}
+.hintBtn {
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 6px; padding: 4px 10px;
+  font-family: var(--mono); font-size: 11px; color: var(--text-dim);
+  cursor: pointer; transition: all 0.15s;
+}
+.hintBtn:hover { border-color: var(--border-hi); color: var(--cyan); }
+
+/* Error box */
+.errBox {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--red-dim);
+  border: 1px solid rgba(255,59,92,0.3);
+  border-radius: 12px; padding: 16px 20px;
+  font-family: var(--mono); font-size: 13px; color: var(--red);
+  margin-bottom: 24px;
+}
+
+/* Scanning animation */
+.scanning {
+  display: flex; align-items: center; gap: 32px;
+  background: var(--panel);
+  border: 1px solid var(--border-hi);
+  border-radius: 16px; padding: 32px;
+  margin-bottom: 24px;
+}
+
+.scanningRing {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  border-top-color: var(--cyan);
+  border-right-color: var(--cyan);
+  animation: spinSlow 1s linear infinite;
+  flex-shrink: 0;
+  box-shadow: var(--glow-c);
+}
+
+.scanningTitle {
+  font-family: var(--display); font-size: 22px;
+  color: var(--cyan); letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.scanningStep {
+  font-family: var(--mono); font-size: 12px;
+  color: var(--text-dim); letter-spacing: 0.05em;
+  animation: fadeIn 0.3s ease both;
+}
+
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
