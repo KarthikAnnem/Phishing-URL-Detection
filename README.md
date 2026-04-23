@@ -112,6 +112,11 @@ The backend loads `transformer_phishing.pt` via PyTorch at startup.
 
 ## Threat Classes
 
+screen shots of the outputs
+<img width="1892" height="978" alt="Screenshot 2025-11-12 102157" src="https://github.com/user-attachments/assets/a0e0a1c4-e13c-4dce-a9fb-56babb0463f4" />
+
+
+
 | Label    | Meaning                                              |
 |----------|------------------------------------------------------|
 | SAFE     | URL appears legitimate, no threat indicators         |
